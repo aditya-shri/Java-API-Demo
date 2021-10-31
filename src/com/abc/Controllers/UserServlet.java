@@ -1,9 +1,7 @@
 package com.abc.Controllers;
 
 import com.abc.Constants.JsonStrings;
-import com.abc.Models.Order;
 import com.abc.Models.User;
-import com.abc.Services.OrderDAO;
 import com.abc.Services.UserDAO;
 
 import javax.servlet.RequestDispatcher;
@@ -24,29 +22,29 @@ public class UserServlet extends HttpServlet {
             String email = request.getParameter("email");
             String address = request.getParameter("address");
 
-            User user = new User(name,mobile,email,address);
-            if(UserDAO.addUser(user)){
+            User user = new User(name, mobile, email, address);
+            if (UserDAO.addUser(user)) {
                 request.setAttribute("response", JsonStrings.addUser());
-            }else{
+            } else {
                 request.setAttribute("response", JsonStrings.error("User Addition failed"));
             }
-        }catch(Exception e){
+        } catch (Exception e) {
             request.setAttribute("response", JsonStrings.error(e.toString()));
         }
         RequestDispatcher rq = request.getRequestDispatcher("response.jsp");
-        rq.forward(request,response);
+        rq.forward(request, response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        try{
+        try {
             ArrayList<User> users = UserDAO.getAllUsers();
             String res = JsonStrings.getAllUsers(users);
 
             request.setAttribute("response", res);
-        }catch (Exception e){
+        } catch (Exception e) {
             request.setAttribute("response", JsonStrings.error(e.toString()));
         }
         RequestDispatcher rq = request.getRequestDispatcher("response.jsp");
-        rq.forward(request,response);
+        rq.forward(request, response);
     }
 }

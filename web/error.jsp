@@ -11,8 +11,8 @@
     <title>Error</title>
 </head>
 <body>
-    <h1>Error</h1>
-    <p>The URI you are trying to access is not available.</p>
-    <p>Refer <a href="/">Index</a> for URI's available.</p>
+<h1>Error</h1>
+<p>The URI you are trying to access is not available.</p>
+<p>Refer <a href="/">Index</a> for URI's available.</p>
 </body>
 </html>

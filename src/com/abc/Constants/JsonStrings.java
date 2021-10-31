@@ -12,7 +12,7 @@ public class JsonStrings {
     public static String error(String error) {
         return "{" +
                 "    \"success\": false,\n" +
-                "    \"message\": \""+error+"\",\n" +
+                "    \"message\": \"" + error + "\",\n" +
                 "}";
     }
 
@@ -25,9 +25,9 @@ public class JsonStrings {
 
     public static String addOrder() {
         return "{" +
-                    "    \"success\": true,\n" +
-                    "    \"message\": \"Order successfully added\",\n" +
-                    "}";
+                "    \"success\": true,\n" +
+                "    \"message\": \"Order successfully added\",\n" +
+                "}";
     }
 
     public static String getAllOrders(ArrayList<Order> orders) {
@@ -36,12 +36,12 @@ public class JsonStrings {
         Gson gson = builder.create();
 
 
-        String res =  "{" +
-                    "    \"success\": true,\n" +
-                    "    \"message\": \"All orders for the user asked!\",\n" +
-                    "    \"data\": [";
+        String res = "{" +
+                "    \"success\": true,\n" +
+                "    \"message\": \"All orders for the user asked!\",\n" +
+                "    \"data\": [";
 
-        for(Order order: orders){
+        for (Order order : orders) {
             String json = gson.toJson(order);
         }
 
@@ -69,12 +69,12 @@ public class JsonStrings {
         Gson gson = builder.create();
 
 
-        String res =  "{" +
+        String res = "{" +
                 "    \"success\": true,\n" +
                 "    \"message\": \"All Users!\",\n" +
                 "    \"data\": [";
 
-        for(User user: users){
+        for (User user : users) {
             String json = gson.toJson(user);
         }
 

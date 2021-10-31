@@ -32,9 +32,9 @@ public class Order {
         this.description = description;
         this.quantity = quantity;
         Item it = ItemDAO.getItem(item);
-        if(it == null){
+        if (it == null) {
             throw new Exception("Item not found!");
-        }else{
+        } else {
             this.item = it;
         }
     }
@@ -45,9 +45,9 @@ public class Order {
         this.description = description;
         this.quantity = quantity;
         Item it = ItemDAO.getItem(item);
-        if(it == null){
+        if (it == null) {
             throw new Exception("Item not found!");
-        }else{
+        } else {
             this.item = it;
         }
     }

@@ -11,6 +11,6 @@
     <title>ABC Delivery</title>
 </head>
 <body>
-    <%=(String)request.getAttribute("response")%>
+<%=(String) request.getAttribute("response")%>
 </body>
 </html>
