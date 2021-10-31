@@ -16,9 +16,9 @@ public class OrderDAO {
 
             PreparedStatement statement = connection.prepareStatement("INSERT INTO Orders values(?,?,?,?)");
             statement.setInt(1, order.getUserid());
-            statement.setString(2, order.getDescription());
-            statement.setInt(3, order.getQuantity());
-            statement.setString(4, order.getItem().getName());
+            statement.setString(2, order.getItem().getName());
+            statement.setString(3, order.getDescription());
+            statement.setInt(4, order.getQuantity());
 
             return statement.executeUpdate() > 0;
         } catch (Exception e) {
@@ -36,7 +36,7 @@ public class OrderDAO {
             ResultSet rs = statement.executeQuery();
 
             while (rs.next()) {
-                Order order = new Order(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getString(4));
+                Order order = new Order(rs.getInt(1), rs.getString(3), rs.getInt(4), rs.getString(2));
                 orders.add(order);
             }
             return orders;

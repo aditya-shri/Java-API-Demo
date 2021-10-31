@@ -6,9 +6,9 @@ public class Order {
 
     private int id;
     private int userid;
+    private Item item;
     private String description;
     private int quantity;
-    private Item item;
 
     public Order(int userid, int quantity, Item item) {
         this.id = 0;
