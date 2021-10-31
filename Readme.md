@@ -62,7 +62,7 @@ Distributed under the MIT License. See [License][license-url] for more informati
 
 Aditya Shrivastava - [@aditya-shri](https://www.linkedin.com/in/aditya-shri/) - mymail@adityashrivastava.tk
 
-Project Link: [Guide](https://github.com/aditya-shri/Java-API-Demo)
+Project Link: [Java API Demo](https://github.com/aditya-shri/Java-API-Demo)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
