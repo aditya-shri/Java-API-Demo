@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/aditya-shri/Java-API-Demo">
-    <img src="images/images.png" alt="Logo" width="200" height="200">
+    <img src="images/images.png" alt="Logo" width="300" height="200">
   </a>
 
   <p align="center">
