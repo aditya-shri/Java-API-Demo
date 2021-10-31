@@ -11,7 +11,7 @@
   </a>
 
   <p align="center">
-    A Demo REST-API project built using Java for solving a real-world problem presented by Felinos Tecchnologies for their assessment.
+    A Demo REST-API project built using Java for solving a real-world problem presented by Felinos Technologies for their assessment.
     <br />
     <a href="https://github.com/aditya-shri/Java-API-Demo"><strong>Explore the docs »</strong></a>
     <br />
@@ -40,7 +40,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-A Demo REST-API project built using Java for solving a real-world problem presented by Felinos Tecchnologies for their assessment.
+A Demo REST-API project built using Java for solving a real-world problem presented by Felinos Technologies for their assessment.
 
 ### Built With
 
