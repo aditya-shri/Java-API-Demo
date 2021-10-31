@@ -13,7 +13,7 @@ public class DBConnection {
         try {
             Class.forName("org.postgresql.Driver");
 
-            URI dbUri = new URI("postgres://azccxipsgexchd:34d0525393cd5e97cc33f8e592c88678659542e5fa54d565aafef376eee8a6e5@ec2-34-200-161-87.compute-1.amazonaws.com:5432/d675d9pl17sr6q");
+            URI dbUri = new URI("");
             String username = dbUri.getUserInfo().split(":")[0];
             String password = dbUri.getUserInfo().split(":")[1];
             String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
