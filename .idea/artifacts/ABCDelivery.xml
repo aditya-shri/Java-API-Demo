@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ABCDelivery">
+    <output-path>$PROJECT_DIR$/out/artifacts/ABCDelivery</output-path>
+    <root id="archive" name="ABCDelivery.war">
+      <element id="artifact" artifact-name="web:war exploded" />
+      <element id="module-output" name="ABCDelivery" />
+    </root>
+  </artifact>
+</component>
