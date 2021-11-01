@@ -43,6 +43,7 @@ public class JsonStrings {
 
         for (Order order : orders) {
             String json = gson.toJson(order);
+            res+=json;
         }
 
         res += "]}";
@@ -76,6 +77,7 @@ public class JsonStrings {
 
         for (User user : users) {
             String json = gson.toJson(user);
+            res+=json;
         }
 
         res += "]}";

@@ -40,6 +40,7 @@ public class UserServlet extends HttpServlet {
             ArrayList<User> users = UserDAO.getAllUsers();
             String res = JsonStrings.getAllUsers(users);
 
+
             request.setAttribute("response", res);
         } catch (Exception e) {
             request.setAttribute("response", JsonStrings.error(e.toString()));

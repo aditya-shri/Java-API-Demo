@@ -52,7 +52,7 @@ public class UserDAO {
             ResultSet rs = statement.executeQuery();
 
             while (rs.next()) {
-                users.add(new User(rs.getInt(1), rs.getString(1), rs.getInt(3), rs.getString(4), rs.getString(5)));
+                users.add(new User(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getString(4), rs.getString(5)));
             }
             return users;
         } catch (Exception e) {
