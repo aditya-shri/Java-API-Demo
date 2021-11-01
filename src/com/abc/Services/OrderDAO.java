@@ -14,7 +14,7 @@ public class OrderDAO {
         try {
             Connection connection = DBConnection.getConnection();
 
-            PreparedStatement statement = connection.prepareStatement("INSERT INTO Orders values(?,?,?,?)");
+            PreparedStatement statement = connection.prepareStatement("INSERT INTO Orders (userid,item,description,quantity) values(?,?,?,?)");
             statement.setInt(1, order.getUserid());
             statement.setString(2, order.getItem().getName());
             statement.setString(3, order.getDescription());

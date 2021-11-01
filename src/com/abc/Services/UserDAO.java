@@ -31,7 +31,7 @@ public class UserDAO {
         try {
             Connection connection = DBConnection.getConnection();
 
-            PreparedStatement statement = connection.prepareStatement("INSERT INTO Users values(?,?,?,?)");
+            PreparedStatement statement = connection.prepareStatement("INSERT INTO Users (name,mobile,email,address) values(?,?,?,?)");
             statement.setString(1, user.getName());
             statement.setInt(2, user.getMobile());
             statement.setString(3, user.getEmail());
