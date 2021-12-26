@@ -43,8 +43,7 @@
 A Demo REST-API project built using Java for solving a real-world problem of implementing a Java based Api system.
 
 ### Built With
-
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+<!--This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.-->
 * [Java](https://www.java.com/en/)
 * [JSP](https://en.wikipedia.org/wiki/Jakarta_Server_Pages)
 * [Servlet](https://docs.oracle.com/javaee/6/api/javax/servlet/Servlet.html)
